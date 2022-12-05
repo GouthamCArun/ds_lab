@@ -1,19 +1,18 @@
 #include <stdio.h>
 #define maxsize 5
-
+int front=-1,rear=-1;
 void enque(int item);
 void deque();
 void display();
-int front=-1,rear=-1;
+
 int que[maxsize];
 
 void enque(int item)
 {
 	if (rear==maxsize-1)
-	{
 		printf("que is full");
-	}
-	else if (front=-1)
+	
+	else if (front==-1 && rear==-1)
 	{
 		front=0;
 		que[++rear]=item;
@@ -25,7 +24,7 @@ void enque(int item)
 }
 void deque()
 {
-	if (front=-1)
+	if (front==-1)
 	{
 		printf("empty");
 	}
@@ -38,7 +37,7 @@ void deque()
 }
 void display()
 {
-	if (front=-1)
+	if (front==-1)
 	{
 		printf("empty");
 	}
@@ -92,7 +91,6 @@ void main()
 
 
 }
-
 
 
 
